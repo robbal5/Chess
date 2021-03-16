@@ -8,6 +8,5 @@ module Steppable
     
     end 
 
-    
 
 end 
