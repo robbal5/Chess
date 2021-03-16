@@ -7,6 +7,7 @@ attr_reader :name, :title, :salary, :boss
         @title = title
         @salary = salary
         @boss = boss
+        add_employee unless boss.nil?
     end
 
     def bonus(multiplier)
@@ -14,7 +15,8 @@ attr_reader :name, :title, :salary, :boss
     end
 
     def add_employee
-        boss.employees << self
+        @boss.employees << self
+        @boss.boss.employees  << self unless @boss.boss.nil?
     end
 
 end
