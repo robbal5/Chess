@@ -1,7 +1,7 @@
 require_relative "piece.rb"
 require 'singleton'
 
-class NullPiece 
+class NullPiece < Piece
     include Singleton
     def initialize
         @color = :no_color

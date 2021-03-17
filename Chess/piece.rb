@@ -9,7 +9,7 @@ attr_accessor :color, :board, :pos
     end
 
     def to_s
-        self.symbol
+        "#{symbol}"
     end 
     
     def empty?
