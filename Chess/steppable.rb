@@ -25,7 +25,7 @@ module Steppable
     end 
     
     def move_diffs
-    
+        raise "Must establish unique move_dirs for the child piece class"
     end 
 
 

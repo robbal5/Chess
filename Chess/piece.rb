@@ -9,11 +9,11 @@ attr_accessor :color, :board, :pos
     end
 
     def to_s
-
+        self.symbol
     end 
     
     def empty?
-
+        self == NullPiece.instance
     end 
 
     def valid_moves
@@ -25,6 +25,7 @@ attr_accessor :color, :board, :pos
     end 
 
     def symbol
+
     end 
     
     private

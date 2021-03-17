@@ -37,7 +37,7 @@ private_constant :DIAGONAL_DIRS, :HORIZONTAL_DIRS
     private
     
     def move_dirs
-
+      raise "Must establish unique move_dirs for the child piece class"
     end 
 
     def grow_unblocked_moves_in_dir(dx, dy)
