@@ -4,7 +4,7 @@ require_relative "steppable.rb"
 class Knight < Piece
     include Steppable
     def symbol
-        "♘".colorize(@color)
+        "♘"
     end
 
     protected

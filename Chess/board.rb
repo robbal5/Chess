@@ -1,8 +1,9 @@
 require_relative "pieces.rb"
 class Board
+    attr_reader :rows
 
     def initialize
-        @rows = Array.new(8) {Array.new(8)}
+        @rows = Array.new(8) {Array.new(8)} 
         self.pieces
     end
 
@@ -24,7 +25,7 @@ class Board
         raise "Invalid move for this piece" if !self[start_pos].moves.include?(end_pos)
         self[end_pos] = self[start_pos]
         self[end_pos].pos = end_pos
-        self[start_pos] = nil
+        self[start_pos] = NullPiece.instance
             
     end
     def pieces
