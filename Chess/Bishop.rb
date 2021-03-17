@@ -4,7 +4,7 @@ class Bishop < Piece
     include Slideable
     
     def symbol 
-
+        "♗".colorize(@color)
     end 
 
     private

@@ -1,3 +1,4 @@
+require "colorize"
 require_relative "board.rb"
 class Piece
 attr_accessor :color, :board, :pos
@@ -23,7 +24,7 @@ attr_accessor :color, :board, :pos
         @pos= val 
     end 
 
-    def Symbol
+    def symbol
     end 
     
     private
