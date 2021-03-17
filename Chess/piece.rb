@@ -20,7 +20,7 @@ attr_accessor :color, :board, :pos
     end 
 
     def pos=(val)
-        
+        @pos= val 
     end 
 
     def Symbol
