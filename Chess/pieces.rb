@@ -1,3 +1,4 @@
+
 require_relative "Bishop"
 require_relative "King"
 require_relative "Knight"
