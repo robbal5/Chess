@@ -16,8 +16,7 @@ class Pawn < Piece
         if @color == :white
             return @pos[0] == 1
         else
-            return 
-            @pos[0] == 6
+            return @pos[0] == 6
         end
     end
 
@@ -31,6 +30,7 @@ class Pawn < Piece
 
     def forward_steps
         forward_moves = []
+        debugger
         
         row, col = @pos
          if at_start_row?

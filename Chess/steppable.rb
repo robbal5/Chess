@@ -10,7 +10,7 @@ module Steppable
             if test_pos.min < 0 || test_pos.max > 7
                 next 
             end  
-                if @board[test_pos] != nil
+                if !@board[test_pos].empty?
 
                     if @board[test_pos].color == @color 
                         next 

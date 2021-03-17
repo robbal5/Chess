@@ -15,6 +15,7 @@ DIAGONAL_DIRS = [
 private_constant :DIAGONAL_DIRS, :HORIZONTAL_DIRS  
 
     def moves
+      debugger
       possible_moves = []
       move_dirs.each do |dir|  
         # debugger
@@ -51,7 +52,7 @@ private_constant :DIAGONAL_DIRS, :HORIZONTAL_DIRS
 
           break unless current_pos.min >= 0 && current_pos.max <= 7 
         
-          if @board[current_pos].nil?
+          if @board[current_pos].empty?
             moves << current_pos.dup
           else
              if @color == @board[current_pos].color
